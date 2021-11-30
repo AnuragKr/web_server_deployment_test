@@ -79,7 +79,7 @@ DATABASES = {
         'OPTIONS': {
             'database' : 'test_db',
             'user' : 'root',
-            'password' : 'root',
+            'password' : 'deProject@21',
             'init_command': 'SET sql_mode=NO_ENGINE_SUBSTITUTION',
             'host': 'localhost',
         }
