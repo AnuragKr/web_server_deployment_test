@@ -75,8 +75,14 @@ WSGI_APPLICATION = 'web_server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'database' : 'test_db',
+            'user' : 'root',
+            'password' : 'root',
+            'init_command': 'SET sql_mode=NO_ENGINE_SUBSTITUTION',
+            'host': 'localhost',
+        }
     }
 }
 
