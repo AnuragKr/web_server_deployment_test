@@ -3,4 +3,5 @@ from django.shortcuts import render
 
 class HomePage(TemplateView):
     def get(self,request):
-        return render(request,'index.html')
+      print('Server is Running')
+      return render(request,'index.html')
